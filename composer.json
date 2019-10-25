@@ -1,0 +1,28 @@
+{
+    "name": "kukudeliu\/weather",
+    "description": "A Weather SDK.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "LiuYi",
+            "email": "kukudeliu@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "^8.4",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kukudeliu\\Weather\\": "./src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kukudeliu\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
